@@ -18,12 +18,12 @@ Ask your assistant things like "transcribe ~/Downloads/interview.m4a with timest
 
 Requires Node.js 20 or newer (22.13+ for `search_dictations`). macOS (Apple Silicon and Intel), Windows x64 and Linux x64/arm64.
 
-**Claude Desktop**: add to `claude_desktop_config.json`:
+**Claude Desktop, one click**: download [yap.mcpb](https://github.com/founden-bot/yap-mcp/releases/latest/download/yap.mcpb) and open it (macOS and Windows). Or add to `claude_desktop_config.json`:
 
 ```json
 {
   "mcpServers": {
-    "yap": { "command": "npx", "args": ["-y", "yap-mcp"] }
+    "yap": { "command": "npx", "args": ["-y", "github:founden-bot/yap-mcp"] }
   }
 }
 ```
@@ -31,10 +31,10 @@ Requires Node.js 20 or newer (22.13+ for `search_dictations`). macOS (Apple Sili
 **Claude Code**:
 
 ```sh
-claude mcp add yap -- npx -y yap-mcp
+claude mcp add yap -- npx -y github:founden-bot/yap-mcp
 ```
 
-**Cursor, Windsurf, VS Code, Cline, Zed and other clients**: add a stdio server with command `npx` and arguments `-y yap-mcp`.
+**Cursor, Windsurf, VS Code, Cline, Zed and other clients**: add a stdio server with command `npx` and arguments `-y github:founden-bot/yap-mcp`.
 
 The first transcription downloads the model once (a few minutes on a typical connection) and answers with the progress while it does; after that, everything runs offline. Transcription runs about ten times faster than real time on a modern laptop, so an hour of audio takes about six minutes.
 

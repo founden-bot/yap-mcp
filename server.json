@@ -5,15 +5,24 @@
   "description": "Private on-device speech to text: transcribe audio files and search your Yap dictations. No upload.",
   "version": "1.0.0",
   "websiteUrl": "https://yapapp.cc/mcp",
-  "repository": { "url": "https://github.com/founden-bot/yap-mcp", "source": "github" },
-  "icons": [{ "src": "https://yapapp.cc/brand/icon.svg", "mimeType": "image/svg+xml" }],
+  "repository": {
+    "url": "https://github.com/founden-bot/yap-mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://yapapp.cc/brand/icon.svg",
+      "mimeType": "image/svg+xml"
+    }
+  ],
   "packages": [
     {
-      "registryType": "npm",
-      "registryBaseUrl": "https://registry.npmjs.org",
-      "identifier": "yap-mcp",
-      "version": "1.0.0",
-      "transport": { "type": "stdio" }
+      "registryType": "mcpb",
+      "identifier": "https://github.com/founden-bot/yap-mcp/releases/download/v1.0.0/yap.mcpb",
+      "fileSha256": "4d31be493d1fdc5b0be49a40777951bf05a9bd307a4db3e4956758b5de043ad6",
+      "transport": {
+        "type": "stdio"
+      }
     }
   ]
 }
