@@ -1,0 +1,19 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "cc.yapapp/yap",
+  "title": "Yap",
+  "description": "Private on-device speech to text: transcribe audio files and search your Yap dictations. No upload.",
+  "version": "1.0.0",
+  "websiteUrl": "https://yapapp.cc/mcp",
+  "repository": { "url": "https://github.com/founden-bot/yap-mcp", "source": "github" },
+  "icons": [{ "src": "https://yapapp.cc/brand/icon.svg", "mimeType": "image/svg+xml" }],
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "yap-mcp",
+      "version": "1.0.0",
+      "transport": { "type": "stdio" }
+    }
+  ]
+}

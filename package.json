@@ -1,0 +1,28 @@
+{
+  "name": "yap-mcp",
+  "version": "1.0.0",
+  "description": "Private, on-device speech to text for AI assistants: transcribe audio files and search your Yap dictations from Claude, Cursor, VS Code or any MCP client. No upload, no API key.",
+  "mcpName": "cc.yapapp/yap",
+  "type": "module",
+  "bin": { "yap-mcp": "src/index.js" },
+  "main": "src/index.js",
+  "files": ["src", "README.md", "LICENSE"],
+  "scripts": {
+    "sync": "node scripts/sync.mjs",
+    "test": "node scripts/sync.mjs && node test/smoke.mjs",
+    "prepack": "node scripts/sync.mjs"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "audio-decode": "3.12.0",
+    "sherpa-onnx-node": "1.13.8",
+    "zod": "4.6.7"
+  },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "speech-to-text", "transcription", "whisper-alternative", "parakeet", "offline", "on-device", "local", "privacy", "dictation", "voice", "audio", "claude", "cursor", "yap"],
+  "homepage": "https://yapapp.cc/mcp",
+  "repository": { "type": "git", "url": "git+https://github.com/founden-bot/yap-mcp.git" },
+  "bugs": { "url": "https://github.com/founden-bot/yap-mcp/issues" },
+  "author": "Yap (O-mega Enterprise Inc.) <hello@yapapp.cc> (https://yapapp.cc)",
+  "license": "MIT"
+}

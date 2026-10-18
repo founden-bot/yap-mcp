@@ -1,0 +1,31 @@
+{
+  "manifest_version": "0.3",
+  "name": "yap",
+  "display_name": "Yap: on-device speech to text",
+  "version": "1.0.0",
+  "description": "Transcribe audio files and search your Yap dictations, privately on your computer. No upload, no API key.",
+  "long_description": "Yap gives Claude private speech to text. Ask it to transcribe a voice memo, an interview, a lecture or a meeting recording on your computer (WAV, MP3, M4A, MP4, FLAC, OGG, WebM and more, any length, 25 European languages detected automatically), with optional timestamps.\n\nRecognition runs locally with NVIDIA Parakeet TDT v3, the same engine as the Yap dictation app: audio never leaves your machine. The first transcription downloads the speech model once (about 670 MB, checksum verified).\n\nIf you use the Yap app on this computer, Claude can also search what you dictated (read-only). Yap for Mac and Windows: https://yapapp.cc",
+  "author": { "name": "Yap (O-mega Enterprise Inc.)", "email": "hello@yapapp.cc", "url": "https://yapapp.cc" },
+  "repository": { "type": "git", "url": "https://github.com/founden-bot/yap-mcp.git" },
+  "homepage": "https://yapapp.cc/mcp",
+  "documentation": "https://github.com/founden-bot/yap-mcp#readme",
+  "support": "https://github.com/founden-bot/yap-mcp/issues",
+  "icon": "icon.png",
+  "server": {
+    "type": "node",
+    "entry_point": "server/src/index.js",
+    "mcp_config": { "command": "node", "args": ["${__dirname}/server/src/index.js"] }
+  },
+  "tools": [
+    { "name": "transcribe_audio", "description": "Transcribe a local audio or video file on this computer, with optional timestamps." },
+    { "name": "search_dictations", "description": "Search the dictation history of the Yap app on this computer (read-only)." },
+    { "name": "prepare_speech_model", "description": "Download and verify the on-device speech model ahead of the first transcription." }
+  ],
+  "keywords": ["speech to text", "transcription", "audio", "voice memo", "dictation", "offline", "privacy", "parakeet"],
+  "license": "MIT",
+  "privacy_policies": ["https://yapapp.cc/legal/privacy"],
+  "compatibility": {
+    "platforms": ["darwin", "win32"],
+    "runtimes": { "node": ">=20.0.0" }
+  }
+}
