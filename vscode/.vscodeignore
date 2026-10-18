@@ -1,0 +1,5 @@
+**/*.map
+**/test/**
+**/.github/**
+server/node_modules/**/README*
+server/node_modules/**/*.md

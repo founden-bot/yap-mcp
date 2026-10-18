@@ -42,6 +42,10 @@ claude mcp add yap -- npx -y github:founden-bot/yap-mcp
 
 The first transcription downloads the model once (a few minutes on a typical connection) and answers with the progress while it does; after that, everything runs offline. Transcription runs about ten times faster than real time on a modern laptop, so an hour of audio takes about six minutes.
 
+## In the terminal
+
+The same engine as a command: `npx -y -p github:founden-bot/yap-mcp yap-transcribe memo.m4a` prints the transcript (add `--timestamps` for start times, several files at once are fine).
+
 ## Languages
 
 English, German, French, Spanish, Italian, Portuguese, Dutch, Polish, Russian, Ukrainian, Swedish, Danish, Finnish, Czech, Slovak, Hungarian, Romanian, Bulgarian, Greek, Croatian, Slovenian, Latvian, Lithuanian, Estonian and Maltese.
