@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "yap": { "type": "stdio", "command": "npx", "args": ["-y", "github:founden-bot/yap-mcp"] }
+  }
+}

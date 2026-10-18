@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "yap": { "command": "npx", "args": ["-y", "github:founden-bot/yap-mcp"] }
+  }
+}

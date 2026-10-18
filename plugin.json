@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "yap",
+  "version": "1.0.0",
+  "description": "Private, on-device speech to text: transcribe local audio files and search your Yap dictations. No upload, no API key.",
+  "author": { "name": "Yap (O-mega Enterprise Inc.)", "email": "hello@yapapp.cc", "url": "https://yapapp.cc" },
+  "homepage": "https://yapapp.cc/mcp",
+  "repository": "https://github.com/founden-bot/yap-mcp",
+  "license": "MIT",
+  "keywords": ["speech-to-text", "transcription", "audio", "dictation", "offline", "privacy", "mcp"]
+}

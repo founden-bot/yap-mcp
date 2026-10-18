@@ -34,6 +34,10 @@ Requires Node.js 20 or newer (22.13+ for `search_dictations`). macOS (Apple Sili
 claude mcp add yap -- npx -y github:founden-bot/yap-mcp
 ```
 
+**Claude Code plugin**: `/plugin marketplace add founden-bot/yap-mcp`, then `/plugin install yap@yap`.
+
+**Gemini CLI**: `gemini extensions install https://github.com/founden-bot/yap-mcp`.
+
 **Cursor, Windsurf, VS Code, Cline, Zed and other clients**: add a stdio server with command `npx` and arguments `-y github:founden-bot/yap-mcp`.
 
 The first transcription downloads the model once (a few minutes on a typical connection) and answers with the progress while it does; after that, everything runs offline. Transcription runs about ten times faster than real time on a modern laptop, so an hour of audio takes about six minutes.

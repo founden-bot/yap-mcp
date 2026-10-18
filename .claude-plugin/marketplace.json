@@ -1,0 +1,7 @@
+{
+  "name": "yap",
+  "owner": { "name": "Yap (O-mega Enterprise Inc.)", "email": "hello@yapapp.cc" },
+  "plugins": [
+    { "name": "yap", "source": "./", "description": "Private, on-device speech to text: transcribe local audio files and search your Yap dictations. No upload, no API key.", "version": "1.0.0", "homepage": "https://yapapp.cc/mcp", "license": "MIT", "category": "productivity" }
+  ]
+}

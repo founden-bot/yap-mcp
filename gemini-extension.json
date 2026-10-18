@@ -1,0 +1,8 @@
+{
+  "name": "yap",
+  "version": "1.0.0",
+  "description": "Private, on-device speech to text: transcribe local audio files and search your Yap dictations. No upload, no API key.",
+  "mcpServers": {
+    "yap": { "command": "npx", "args": ["-y", "github:founden-bot/yap-mcp"] }
+  }
+}
