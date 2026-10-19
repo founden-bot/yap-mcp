@@ -34,7 +34,7 @@ Requires Node.js 20 or newer (22.13+ for `search_dictations`). macOS (Apple Sili
 claude mcp add yap -- npx -y github:founden-bot/yap-mcp
 ```
 
-**Claude Code plugin**: `/plugin marketplace add founden-bot/yap-mcp`, then `/plugin install yap@yap`.
+**Claude Code plugin**: `/plugin marketplace add founden-bot/yap-mcp`, then `/plugin install yap@yap`. The plugin runs the server from its own folder (`node ${CLAUDE_PLUGIN_ROOT}/src/index.js`) with the dependencies pinned in `package-lock.json`, and adds the `transcribe-recordings` skill.
 
 **Gemini CLI**: `gemini extensions install https://github.com/founden-bot/yap-mcp`.
 
