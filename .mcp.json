@@ -1,5 +1,5 @@
 {
   "mcpServers": {
-    "yap": { "command": "npx", "args": ["-y", "github:founden-bot/yap-mcp"] }
+    "yap": { "command": "node", "args": ["${CLAUDE_PLUGIN_ROOT}/src/index.js"] }
   }
 }
